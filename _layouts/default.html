@@ -28,28 +28,34 @@
         </div>
         <div class="posts">
           <ul class="posts-list">
-            {% for post in site.posts %}
+            <!-- {% for post in site.posts %}
               <li class="post-link">
                 <a class="post-title" href="{{ post.url }}">
                   <span class="post-date">{{ post.date | date_to_string }}</span>
                   {{ post.title }}
                 </a>
               </li>
-            {% endfor %}
+            {% endfor %} -->
+            <li class="post-link"><a href="/archive">Archive</a></li>
+            <li class="post-link"><a href="/about">About</a></li>
+            <li class="post-link"><a target="_blank" href="https://soundcloud.com/radioblog-2">Soundcloud</a></li>
+            <li class="post-link"><a target="_blank" href="https://www.facebook.com/Radioblog-Tirana-777798509004032/">Facebook</a></li>
           </ul>
         </div>
         <div class="footer">
-          <span id="footer-links">
+          <!-- <span id="footer-links">
             <a href="" class="footer-link">About</a> <span class="separator">&bull;</span>
             <a href="" class="footer-link">Twitter</a> <span class="separator">&bull;</span>
             <a href="" class="footer-link">GitHub</a>
-          </span>
+          </span> -->
         </div>
       </div>
 
         {{ content }}
 
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/scripts/responsive.js" type="text/javascript"></script>
+    <script src="/scripts/infinite-jekyll.js"></script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archive
+---
+<div class="content" id="home">
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <div id="post-info">
+    <div id="info-container">
+      <h1 id="title">{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="post">
+
+    {% for post in site.posts %}
+      <h3><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></h3>
+      {{ post.player }}
+    {% endfor %}
+    <!-- <div class="infinite-spinner"></div> -->
+  </div>
+</div>
